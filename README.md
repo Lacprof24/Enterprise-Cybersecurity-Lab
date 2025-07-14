@@ -2,7 +2,7 @@
 
 This lab was designed to simulate a realistic enterprise network with both attack and defense components using open-source tools and virtualization. The goal was to build a fully integrated environment where I could practice both blue team and red team skills.
 
-## 🖥 Virtual Machines
+##  Virtual Machines
 
 | Role               | OS / Tooling                |
 |--------------------|-----------------------------|
