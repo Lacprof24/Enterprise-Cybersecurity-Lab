@@ -8,7 +8,7 @@ This lab was designed to simulate a realistic enterprise network with both attac
 |--------------------|-----------------------------|
 | Attacker Server    | Kali Linux (Evil-WinRM, Hydra, NetExec, xfreerdp, SecLists) |
 | Email Server       | Ubuntu Server (MailHog)     |
-| SOC / SIEM Server  | Security Onion              |
+| SOC / SIEM Server  |Wazuh           |
 | Clients            | Ubuntu Desktop, Windows 11 Enterprise |
 | Domain Controller  | Windows Server 2024 (Active Directory, DNS, DHCP, User Management) |
 
@@ -16,7 +16,6 @@ This lab was designed to simulate a realistic enterprise network with both attac
 
 ### 🛡️ Defensive
 - **Wazuh** – Host-based SIEM with centralized logging
-- **Security Onion** – Network monitoring and threat detection
 - **Active Directory** – Centralized domain controller with user/group policies
 - **DNS Server** – Name resolution within internal network (Windows Server)
 - **DHCP Server** – Dynamic IP assignment for client VMs (Windows Server)
@@ -50,5 +49,5 @@ This lab was designed to simulate a realistic enterprise network with both attac
 - AD user/group creation, domain join, and GPO management
 - DNS/DHCP deployment in a Windows Server environment
 - Attacker simulation using Kali Linux tools
-- Incident monitoring with Wazuh and Security Onion
+- Incident monitoring with Wazuh 
 
