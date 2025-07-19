@@ -34,7 +34,7 @@ bash
 netdiscover -r 10.0.0.0/24
 nmap -sS -sV -O -T4 10.0.0.0/24
 
-2. SMB & RDP Brute Force
+### 2. SMB & RDP Brute Force
 Tool: Hydra
 Target: client-win
 Protocols: SMB & RDP
