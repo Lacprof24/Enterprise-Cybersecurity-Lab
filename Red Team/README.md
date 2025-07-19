@@ -30,7 +30,7 @@ This section documents simulated attacks executed against an enterprise environm
 **Tools**: `netdiscover`, `nmap`  
 **Purpose**: Identify live hosts, open ports, and OS fingerprints.
 
-```bash
+bash
 netdiscover -r 10.0.0.0/24
 nmap -sS -sV -O -T4 10.0.0.0/24
 
