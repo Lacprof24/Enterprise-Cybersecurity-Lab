@@ -66,3 +66,14 @@ Edit
 xfreerdp /u:jdoe /p:password123 /v:10.0.0.101
 Results: Successful RDP session.
  Detection: Wazuh detected successful login (Event ID 4624).
+
+
+MITRE ATT&CK Mapping
+ | Tactic            | Technique                                     | Tool                  |
+| ----------------- | --------------------------------------------- | --------------------- |
+| Reconnaissance    | Active Scanning (T1595)                       | `nmap`                |
+| Credential Access | Brute Force (T1110)                           | `hydra`               |
+| Initial Access    | Valid Accounts (T1078)                        | `hydra`, `evil-winrm` |
+| Execution         | Command and Scripting Interpreter (T1059.001) | `evil-winrm`          |
+| Lateral Movement  | Remote Services: RDP (T1021.001)              | `xfreerdp`            |
+
